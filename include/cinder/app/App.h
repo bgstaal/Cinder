@@ -323,7 +323,7 @@ class App {
 	virtual void		setAlwaysOnTop( bool alwaysOnTop = true ) { }
 
 	//! Returns the number of seconds which have elapsed since application launch
-	double				getElapsedSeconds() const { return mTimer.getSeconds(); }
+	virtual double				getElapsedSeconds() const { return mTimer.getSeconds(); }
 	//! Returns the number of animation frames which have elapsed since application launch
 	uint32_t			getElapsedFrames() const { return mFrameCount; }
 	
